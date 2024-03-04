@@ -1,0 +1,44 @@
+CREATE DATABASE IF NOT EXISTS teste;
+USE teste;
+
+CREATE TABLE IF NOT EXISTS PESSOA
+(Primeiro_nome char(50),
+Sobrenome char(50),
+Endereco char(50),
+Cidade char(50),
+Estado char(50),
+DataNascimento datetime);
+
+
+show databases;
+show tables;
+
+desc PESSOA;
+
+
+create table if not exists tabela2
+(Primeiro_nome char(50),
+Sobrenome char(50)NOT NULL,
+Endereco char(50),
+Cidade char(50),
+Idade integer CHECK (idade >18),
+Estado char(25) DEFAULT 'São Paulo',
+DataNascimento date);
+
+
+CREATE TABLE IF NOT EXISTS ESTADO (
+SIGLA_EST VARCHAR(02) NOT NULL,
+NOME_EST VARCHAR(100) NOT NULL,
+PRIMARY KEY (SIGLA_EST)
+);
+
+
+CREATE TABLE if not exists MUNICIPIO (
+COD_MUN INT      NOT NULL,
+NOME_MUN VARCHAR(100) NOT NULL,
+SIGLA_EST VARCHAR(02),
+PRIMARY KEY (COD_MUN),
+CONSTRAINT FK_EST FOREIGN KEY (SIGLA_EST) REFERENCES ESTADO (SIGLA_EST)
+);
+
+CREATE TABLE if not exists ESTADO ( SIGLA_EST VARCHAR(02) NOT NULL, NOME_EST VARCHAR(100) NOT NULL, PRIMARY KEY (SIGLA_EST) )
