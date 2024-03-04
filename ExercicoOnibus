@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS ONIBUS 
+(linha_numero char (20),
+linha_nome char (20),
+funcionario_matricula char (50),
+funcionario_nome char (30),
+funcionario_cargo char (30),
+onibus_prefixo char (50),
+onibus_placa char (50),
+onibus_chassis char (50),
+onibus_carrocaria char (50),
+onibus_qntpe char (50),
+onibus_qntsentado char (50))
