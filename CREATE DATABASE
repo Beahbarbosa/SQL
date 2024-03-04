@@ -1,0 +1,29 @@
+CREATE DATABASE IF NOT EXISTS teste;
+USE teste;
+
+CREATE TABLE PESSOA
+(Primeiro_nome char(50),
+Sobrenome char(50),
+Endereco char(50),
+Cidade char(50),
+Estado char(50),
+DataNascimento datetime);
+
+
+show databases;
+show tables;
+
+desc PESSOA;
+
+
+create table tabela2
+(Primeiro_nome char(50),
+Sobrenome char(50)NOT NULL,
+Endereco char(50),
+Cidade char(50),
+Idade integer CHECK (idade >18),
+Estado char(25) DEFAULT 'São Paulo',
+DataNascimento date);
+
+
+DROP DATABASE teste;
