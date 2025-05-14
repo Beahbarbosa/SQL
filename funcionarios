@@ -1,0 +1,7 @@
+INSERT INTO Funcionarios (nome, segundonome, endereco,cidade,datanasc,salario, Departamento_ID) VALUES
+('Beatriz','Ferreira','Santos Dumount','Ferraz de Vasconcelos', '2000-22-06','1000.00', '6'),
+('Gustavo','Santos','Margarida','Ferraz de Vasconcelos', '2000-03-05','4000.00', '3'),
+('Amanda','Silva','Guilhermina','Poa', '3500.00','1999-05-06', '4'),
+('Kauan','Pereira','Arthur Alvin','São Paulo','1984-12-12', '4500.00', '5'),
+('Patricia','Soares','São Miguel Paulista','São Paulo','2001-01-02', '2000.00', '1'),
+('Leandro','Ribas','Santa Helena','Poa','1990-20-03', '5000.00', '6');
